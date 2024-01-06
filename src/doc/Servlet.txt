@@ -1,0 +1,43 @@
+
+Servlet :
+
+Servlet object created at the time of first request.
+
+init()  
+service()
+destroy()
+
+Ex : BookApp
+
+-----------------------------------------------
+
+servletconfig :
+An object of servletconfig is created by the web container for each servlet.
+
+servletcontext :
+An object of servletcontext is created by the web container at the time of deploying project.
+
+servlets - server component
+
+--------------------------------------
+
+Servlet Methods :
+
+Get
+Post
+Put
+Delete
+Options
+
+
+
+
+
+
+
+
+
+
+
+
+

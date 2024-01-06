@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns="http://xmlns.jcp.org/xml/ns/javaee"
+	xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_4_0.xsd"
+	id="WebApp_ID" version="4.0">
+
+	<servlet>
+		<servlet-name>calc</servlet-name>
+		<servlet-class>com.advance.program.OperationServlet</servlet-class>
+
+		<init-param>
+			<param-name>BookName</param-name>
+			<param-value>Principles of Economics</param-value>
+		</init-param>
+
+	</servlet>
+
+	<servlet-mapping>
+		<servlet-name>calc</servlet-name>
+		<url-pattern>/add</url-pattern>
+	</servlet-mapping>
+
+	<servlet>
+		<servlet-name>Adcalc</servlet-name>
+		<servlet-class>com.advance.program.AdvancedCalcServlet</servlet-class>
+	</servlet>
+
+	<servlet-mapping>
+		<servlet-name>Adcalc</servlet-name>
+		<url-pattern>/square</url-pattern>
+	</servlet-mapping>
+
+	<context-param>
+		<param-name>BookName</param-name>
+		<param-value>Ikigai</param-value>
+	</context-param>
+	
+		<servlet>
+		<servlet-name>basicCalc</servlet-name>
+		<servlet-class>com.advance.program.BasicCalculationServlet</servlet-class>
+	</servlet>
+
+	<servlet-mapping>
+		<servlet-name>basicCalc</servlet-name>
+		<url-pattern>/basicCalc12</url-pattern>
+	</servlet-mapping>
+	
+		<servlet>
+		<servlet-name>addBook</servlet-name>
+		<servlet-class>com.advance.controller.AddBookDetails</servlet-class>
+	</servlet>
+
+	<servlet-mapping>
+		<servlet-name>addBook</servlet-name>
+		<url-pattern>/addBookDetails</url-pattern>
+	</servlet-mapping>
+	
+		<servlet>
+		<servlet-name>getBookDetails</servlet-name>
+		<servlet-class>com.advance.controller.GetBookDetails</servlet-class>
+	</servlet>
+
+	<servlet-mapping>
+		<servlet-name>getBookDetails</servlet-name>
+		<url-pattern>/getBookDetails</url-pattern>
+	</servlet-mapping>
+	 
+	
+	
+
+
+
+</web-app>

@@ -1,0 +1,19 @@
+What is servlet ? 
+
+What is web application ?
+
+servlet life cycle
+
+servlet request
+
+servlet collaboration
+
+request dispatcher
+send redirect 
+
+servlet config
+
+servlet context
+
+session
+
