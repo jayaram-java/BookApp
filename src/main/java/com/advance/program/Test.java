@@ -12,9 +12,8 @@ import javax.servlet.http.HttpServletResponse;
 import javax.servlet.http.HttpSession;
 
 public class Test {
-	
-	
-	
+
+	// RequestDispatcher - to forward a request to one servlet page to another page
 	public void doGet(HttpServletRequest req, HttpServletResponse res) throws IOException, ServletException {
 
 		String value1 = req.getParameter("Input1");
@@ -33,6 +32,7 @@ public class Test {
 
 	}
 	
+	// HttpSession - Allows us to set objects as attributes that can be retrieved in future requests.
 	public void httpsession(HttpServletRequest req, HttpServletResponse res) throws IOException, ServletException {
 
 		
@@ -49,6 +49,7 @@ public class Test {
 
 	}
 	
+	// Servlet Config
 	public void servletConfig(HttpServletRequest req, HttpServletResponse res) throws IOException, ServletException {
 
 		PrintWriter out = res.getWriter();
@@ -63,6 +64,7 @@ public class Test {
 
 	}
 	
+	// Servlet Context
 	public void servletContext(HttpServletRequest req, HttpServletResponse res) throws IOException, ServletException {
 
 		PrintWriter out = res.getWriter();
@@ -77,7 +79,7 @@ public class Test {
 
 	}
 	
-
+    // Send Redirect
 	public void sendRedirectCode(HttpServletRequest req, HttpServletResponse res) throws IOException, ServletException {
 
 		String value1 = req.getParameter("Input1");
